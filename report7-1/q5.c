@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void dv_calc(int num1, num2);
-
 int main(void){
 	int i = 0;
 	int num[2];
@@ -13,11 +11,6 @@ int main(void){
 		i++;
 	}
 
-	dv_calc(num[0], num[1]);
+	printf("몫은 %d, 나머지는 %d입니다.", num[0]/num[1], num[0]%num[1]);
 	return 0;
-}
-
-
-void dv_calc(int num1, num2){
-	printf("몫은 %d, 나머지는 %d입니다.", num1/num2, num1%num2);
 }
